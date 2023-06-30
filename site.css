@@ -6,9 +6,6 @@ body {
     height: 100vh;
 }
 
-
-
-
 header {
     position: absolute;
     top: 20px;
@@ -102,32 +99,45 @@ header {
     max-width: 100%;
 }
 
-.s1{
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    top: 10px;
-    left: 750px;
-
-}
-
-h1{
-    color: white;
-    border: black;
-    font-size: 50px;
-    font-family:'Segoe UI';
-    position: relative;
-    bottom: 50%;
-    left: -10%;
-    top: 160px;
-    white-space: nowrap;
-    text-shadow: -2px -2px 2px black, 2px -2px 2px black, -2px 2px 2px black, 2px 2px 2px black;
-
-}
-
 .cat{
-    position: relative;
-    top: 250PX;
-    right: 850PX;
+    position: absolute;
+    top: 500PX;
+}
 
+
+.sl {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.sl_act {
+    display: block;
+}
+
+.sl img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.pag {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.pag span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.pag span.active {
+    background-color: #555;
 }
