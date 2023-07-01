@@ -1,0 +1,167 @@
+body {
+    background-color: rgb(9, 8, 9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.inc{
+    background-color: transparent;
+    color:rgb(255, 251, 251);
+    font-size: 15px;
+    font-family: helvetica;
+    /*text-decoration: underline;*/
+    position: fixed;
+    right: 450px;
+    top: 40px;
+}
+.mb{
+    background-color: transparent;
+    color:rgb(255, 251, 251);
+    font-size: 15px;
+    font-family: helvetica;
+    /*text-decoration: underline;*/
+    position: fixed;
+    right: 325px;
+    top:40px
+}
+.flc{
+    background-color: transparent;
+    color:rgb(255, 251, 251);
+    font-size: 15px;
+    font-family: helvetica;
+    /*text-decoration: underline;*/
+    position: fixed;
+    right: 220px;
+    top:40px
+}
+.inc:hover,
+.mb:hover,
+.flc:hover{
+    text-decoration: underline;
+}
+.logo{
+    width: 150px;
+    position:relative;
+    left: 10px;
+}
+
+.csc{
+    position: fixed;
+    top: 30px;
+    right: 90px;
+    padding: 10px 20px;
+    background-color: rgb(245, 208, 113);
+    border-radius: 5%;
+}
+
+.ent{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    padding: 10px;
+    background-color: rgb(245, 208, 113);
+    border-radius: 5%;
+}
+.psq {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.psq input[type="text"] {
+    height: 40px;
+    width: 200px;
+    padding-right: 40px;
+}
+
+.psq button {
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+    background: rgb(245, 208, 113);
+    border: 40%;
+}
+
+.psq img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.cat{
+    position: absolute;
+    top: 500PX;
+}
+
+.sl_act{
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slds{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slds input{
+    display: none;
+
+}
+
+.sl{
+    width: 25%;
+    position: relative;
+}
+
+.sl img{
+    width: 800px;
+}
+.manual-nav{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+.manual-button{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-button:not(:last-child){
+    margin-right: 10px;
+}
+
+.manual-button:hover{
+    background-color: white;
+}
+
+#radio1:checked ~ .sl1{
+    margin: 0;
+    
+}
+
+#radio2:checked ~ .sl1{
+    margin: -15.5%;
+}
+
+#radio3:checked ~ .sl1{
+    margin: -28%;
+}
